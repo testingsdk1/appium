@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="94.964436">
+<testcase classname="Registration" name="Launch App &gt;&gt; Select Hotels &gt;&gt; Read out the first 5 Hotel Names and their rates." time="94.964436">
+<failure message="java.lang.IndexOutOfBoundsException: Index: 0, Size: 0&#10;&#9;at java.util.ArrayList.rangeCheck(ArrayList.java:657)&#10;&#9;at java.util.ArrayList.get(ArrayList.java:433)&#10;&#9;at Generics.appiumMethods.enterEditTextView(appiumMethods.java:118)&#10;&#9;at stepDefinition.registrationStep.enterText(registrationStep.java:57)&#10;&#9;at ✽.Then I enter &quot;mobileNumber&quot; having className &quot;editTextView&quot; with 0 index(Registration.feature:7)&#10;"><![CDATA[Given The application is launched...........................................passed
+When I tap on "phoneNumberTextBox" element..................................passed
+Then I enter "mobileNumber" having className "editTextView" with 0 index....failed
+When I tap on "NEXT" element................................................skipped
+When I tap on "loginviaOtp" element.........................................skipped
+Then The user waits for sms to get autofiled................................skipped
+Then The text "Home" for id "homeId" is verified............................skipped
+When I tap on "askmeLater" element..........................................skipped
+Then I Click on "textView" with "Hotels" text using List....................skipped
+When I tap on "hotelSearchCityTextbox" element..............................skipped
+Then I enter "Sikanderpur" having className "editTextView" with 0 index.....skipped
+When I tap on "searchPrimaryText" element...................................skipped
+When I tap on "SEARCH" element..............................................skipped
+When I tap on "sortFilter" element..........................................skipped
+Then I Click on "textView" with "UserRating" text using List................skipped
+
+StackTrace:
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at Generics.appiumMethods.enterEditTextView(appiumMethods.java:118)
+	at stepDefinition.registrationStep.enterText(registrationStep.java:57)
+	at ✽.Then I enter "mobileNumber" having className "editTextView" with 0 index(Registration.feature:7)
+]]></failure>
+</testcase>
+</testsuite>
