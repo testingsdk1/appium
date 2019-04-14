@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'https://github.com/testingsdk1/appium/', credentialsId: 'ankush.vashist@gmail.com', url: 'https://github.com/testingsdk1/appium/'
+                git branch: 'https://github.com/testingsdk1/appium/', credentialsId: 'testingsdk1', url: 'https://github.com/testingsdk1/appium/'
                 dir('D:/Lutron/Api/') {
                 bat 'C:/JMeter/bin -n -t D:/Lutron/Api/HTTPRequest.jmx -l result.jtl'
             }
