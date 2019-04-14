@@ -10,7 +10,7 @@ pipeline {
     }
     stage('Run JMeter Test') {
         steps {
-            dir('D:\Lutron\Api\') {
+            dir('D:/Lutron/Api/') {
                 bat 'C:\JMeter\bin -n -t D:\Lutron\Api\HTTPRequest.jmx -l result.jtl'
             }
         }
