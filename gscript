@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'https://github.com/ankushvashist01/appium', credentialsId: 'ankush.vashist@gmail.com', url: 'https://github.com/ankushvashist01/appium/android'
+
+            }
+        }
+    }
+    stage('Run JMeter Test') {
+        steps {
+            dir('D:\Lutron\Api\') {
+                bat 'C:\JMeter\bin -n -t D:\Lutron\Api\HTTPRequest.jmx -l result.jtl'
+            }
+        }
+    }
+}
