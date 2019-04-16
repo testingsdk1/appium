@@ -1,0 +1,2054 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.0 r1840935">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">E:\DELL E6440 BACKUP\E DRIVE\LUTRON\Tasks\Release 1.10\QuoteAPI\AggregateGraphReport_25Users_07022018</stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="configuratorUrl" elementType="Argument">
+            <stringProp name="Argument.name">configuratorUrl</stringProp>
+            <stringProp name="Argument.value">aaz-sm-performance-productservices.azurewebsites.net</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="zoomEndPoint" elementType="Argument">
+            <stringProp name="Argument.name">zoomEndPoint</stringProp>
+            <stringProp name="Argument.value">/ProductConfigurator.svc/ZoomerJson/zoom</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="thinkTime" elementType="Argument">
+            <stringProp name="Argument.name">thinkTime</stringProp>
+            <stringProp name="Argument.value">1000</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="qa-configuratorUrl" elementType="Argument">
+            <stringProp name="Argument.name">qa-configuratorUrl</stringProp>
+            <stringProp name="Argument.value">aaz-sm-qa-productservices.azurewebsites.net</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="dpmEndPointUrl" elementType="Argument">
+            <stringProp name="Argument.name">dpmEndPointUrl</stringProp>
+            <stringProp name="Argument.value">/ProductConfigurator.svc/Zoomer/defaultProductModel</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="RedirectURL" elementType="Argument">
+            <stringProp name="Argument.name">RedirectURL</stringProp>
+            <stringProp name="Argument.value">https://saltmarsh.com/home</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="RedirectURL_LD" elementType="Argument">
+            <stringProp name="Argument.name">RedirectURL_LD</stringProp>
+            <stringProp name="Argument.value">https://LutronDesignerPlus.lutron.com/Home/UMLoginCallback</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Client_id-ld" elementType="Argument">
+            <stringProp name="Argument.name">Client_id-ld</stringProp>
+            <stringProp name="Argument.value">6de67393-3c46-4800-9ede-1647564cf0fd</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="client_secret-ld" elementType="Argument">
+            <stringProp name="Argument.name">client_secret-ld</stringProp>
+            <stringProp name="Argument.value">8f1e506f-24c6-47ef-9009-3355005777f1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="user1-ld" elementType="Argument">
+            <stringProp name="Argument.name">user1-ld</stringProp>
+            <stringProp name="Argument.value">qawendy1@gmail.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="user-Id" elementType="Argument">
+            <stringProp name="Argument.name">user-Id</stringProp>
+            <stringProp name="Argument.value">cs_stg_01@lutron.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>true</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">E:\DELL E6440 BACKUP\E DRIVE\LUTRON\Tasks\Release 1.10\QuoteAPI\AggregateReport_25Users_07022018</stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>true</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Quote_API Thread GroupUM" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1517474916000</longProp>
+        <longProp name="ThreadGroup.end_time">1517474916000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UM-Integration Token Generation" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">false</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="UM HTTP Request" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${UamTokenBody}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">aaz-um-integration-login.azurewebsites.net</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/OAuth/Token</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor for umToken" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">umToken</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;access_token&quot;:&quot;(.+?)&quot;,</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default">NotFound</stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+              <stringProp name="Scope.variable">umToken1</stringProp>
+              <stringProp name="Sample.scope">all</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+              <stringProp name="BeanShellAssertion.query">${__setProperty(umToken1,${umToken})}</stringProp>
+              <stringProp name="BeanShellAssertion.filename"></stringProp>
+              <stringProp name="BeanShellAssertion.parameters"></stringProp>
+              <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+            </BeanShellAssertion>
+            <hashTree/>
+            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="false">
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="script">import java.util.Map;
+String jMeterVars;
+jMeterVars = &quot;Quantity of variables: &quot; + vars.entrySet().size() + &quot;.\n\n&quot;;
+jMeterVars += &quot;[VARIABLE NAME]      ==&gt;&gt;      [VARIABLE VALUE]\n\n&quot;;
+for (Map.Entry entry : vars.entrySet()) {
+    jMeterVars += entry.getKey() + &quot;  ==&gt;&gt;  &quot; + entry.getValue().toString() + &quot;\n&quot;;
+    }
+    try {
+        FileWriter fw = new FileWriter(&quot;E:\\jMeterVarsForStackOverflow.txt&quot;,true);
+        fw.write(jMeterVars);
+        fw.close();
+        } catch(IOException ioe) {
+            System.err.println(&quot;IOException: &quot; + ioe.getMessage());
+            }</stringProp>
+              <stringProp name="scriptLanguage">java</stringProp>
+            </JSR223PostProcessor>
+            <hashTree/>
+          </hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+            <stringProp name="filename">D:/Lutron/Api/Quote.csv</stringProp>
+            <stringProp name="fileEncoding">UTF-8</stringProp>
+            <stringProp name="variableNames">SrNo,AppName,ApiName,Name,Description,UamTokenBody,RequestPacket,Assertion,TestResult,APIOutput</stringProp>
+            <boolProp name="ignoreFirstLine">false</boolProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">true</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request-qawendy1" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">grant_type=password&amp;client_id=b79f6a38-5f11-44e5-8eda-d32d7f3fdc95&amp;client_secret=8f403c33-87a0-41e9-9491-8a0256599a50&amp;redirect_uri=${RedirectURL_LD}&amp;username=qawendy1@gmail.com&amp;password=Nagarro@2018</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">aaz-um-integration-login.azurewebsites.net</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/OAuth/Token</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">umToken</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;access_token&quot;:&quot;(.+?)&quot;,</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default">NotFound</stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+              <stringProp name="Scope.variable">umToken</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+              <stringProp name="BeanShellAssertion.query">${__setProperty(umToken1,${umToken})}</stringProp>
+              <stringProp name="BeanShellAssertion.filename"></stringProp>
+              <stringProp name="BeanShellAssertion.parameters"></stringProp>
+              <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+            </BeanShellAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Account CSV Data Set Config" enabled="false">
+          <stringProp name="filename">C:\Saltmarsh\NCPA Performance\Accounts.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">shipToNumber,lsc,currency,country</stringProp>
+          <boolProp name="ignoreFirstLine">false</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="All Seetouch models(Loop Controller)" enabled="false">
+          <boolProp name="LoopController.continue_forever">true</boolProp>
+          <stringProp name="LoopController.loops">5</stringProp>
+        </LoopController>
+        <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Seetouch Models(CSV Data)" enabled="false">
+            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="filename">C:\Saltmarsh\NCPA Performance\TestFilePerformance_SeeTouch.csv</stringProp>
+            <boolProp name="ignoreFirstLine">false</boolProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="variableNames">STproduct,STControl,STSystem,STStyle,STFinish,STColor,STDescription,STImages,STModelNumber,Engraving,IncludesFaceplate,BucketHeaders,IsDefault</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SeeTouch(DefaultProductModel)" enabled="false">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">services.mylutron.com</stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">integration/quotes/v1/quote-submission</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">X-Security-Token</stringProp>
+                  <stringProp name="Header.value">${umToken}</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+              <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Products(QSSRS30A20 &amp; S2A13-ROLLER &amp; LMRC &amp; QSSD-S175STR &amp; CSV-SYJ-B &amp; MA-1000-WH)" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+                &quot;ProjectDetails&quot;: {&#xd;
+    &quot;Name&quot;: &quot;TestProduct&quot;,&#xd;
+    &quot;SpaceName&quot;: &quot;Office&quot;,&#xd;
+    &quot;Description&quot;: &quot;Renovation&quot;,&#xd;
+    &quot;Location&quot;: {&#xd;
+      &quot;AddressLine1&quot;: &quot;Coopersburg&quot;,&#xd;
+      &quot;AddressLine2&quot;: null,&#xd;
+      &quot;AddressLine3&quot;: null,&#xd;
+      &quot;AddressLine4&quot;: null,&#xd;
+      &quot;City&quot;: &quot;Breinigsville&quot;,&#xd;
+      &quot;StateCode&quot;: &quot;PA&quot;,&#xd;
+      &quot;ZIP&quot;: &quot;18031&quot;,&#xd;
+      &quot;CountryCode&quot;: &quot;US&quot;&#xd;
+    },&#xd;
+    &quot;ProjectStatus&quot;: &quot;Design&quot;,&#xd;
+    &quot;ShipToNumber&quot;: &quot;497745&quot;,&#xd;
+    &quot;LutronSellingCompany&quot;: &quot;00101&quot;,&#xd;
+    &quot;AssignedToUserMyLutronId&quot;: &quot;sci1saltmarsh@gmail.com&quot;,&#xd;
+    &quot;ProjectType&quot;: &quot;Office Space&quot;,&#xd;
+    &quot;PrimaryLutronInfluencer&quot;: &quot;Dealer1&quot;,&#xd;
+    &quot;EstimatedCloseDate&quot;: &quot;2019-06-13T14:41:40.6522507-04:00&quot;&#xd;
+  },&#xd;
+  &quot;LineItems&quot;: [&#xd;
+    {&#xd;
+      &quot;Number&quot;: 1,&#xd;
+      &quot;Name&quot;: &quot;Roller Shade 1&quot;,&#xd;
+      &quot;Quantity&quot;: 10,&#xd;
+      &quot;ModelNumber&quot;: &quot;QSSRS30A20&quot;,&#xd;
+      &quot;ListPrice&quot;: 879.43,&#xd;
+      &quot;DiscountedPrice&quot;: 879.43,&#xd;
+      &quot;LeadTime&quot;: 15,&#xd;
+      &quot;Configuration&quot;: {&quot;Product&quot;:&quot;Roller&quot;,&quot;Features&quot;:{&quot;LightGaps&quot;:{&quot;Code&quot;:&quot;MIN&quot;,&quot;Text&quot;:&quot;Minimum&quot;},&quot;Width&quot;:{&quot;Code&quot;:&quot;[40,0,0,0,0,0]&quot;,&quot;Text&quot;:&quot;[40,0,0,0,0,0]&quot;},&quot;Height&quot;:{&quot;Code&quot;:&quot;43&quot;,&quot;Text&quot;:&quot;43&quot;},&quot;Currency&quot;:{&quot;Code&quot;:&quot;USD&quot;,&quot;Text&quot;:&quot;USD&quot;},&quot;Country&quot;:{&quot;Code&quot;:&quot;US&quot;,&quot;Text&quot;:&quot;US&quot;},&quot;Control&quot;:{&quot;Code&quot;:&quot;QSW&quot;,&quot;Text&quot;:&quot;Sivoia QS Wired&quot;},&quot;Drive&quot;:{&quot;Code&quot;:&quot;S100&quot;,&quot;Text&quot;:&quot;Roller 100&quot;},&quot;Fabric&quot;:{&quot;Code&quot;:&quot;SP12-27-3&quot;,&quot;Text&quot;:&quot;Basketweave 27 Oyster 3%&quot;},&quot;FabricFace&quot;:{&quot;Code&quot;:&quot;FIN&quot;,&quot;Text&quot;:&quot;Fabric Face Away From Glass (Standard)&quot;},&quot;Voltage&quot;:{&quot;Code&quot;:&quot;24V&quot;,&quot;Text&quot;:&quot;24V&quot;},&quot;DriveSide&quot;:{&quot;Code&quot;:&quot;L&quot;,&quot;Text&quot;:&quot;Left&quot;},&quot;Bracket&quot;:{&quot;Code&quot;:&quot;CB&quot;,&quot;Text&quot;:&quot;Ceiling Brackets&quot;},&quot;MountingType&quot;:{&quot;Code&quot;:&quot;I&quot;,&quot;Text&quot;:&quot;Inside&quot;},&quot;TopTreatment&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;HasCustomSeams&quot;:{&quot;Code&quot;:&quot;False&quot;,&quot;Text&quot;:&quot;No&quot;},&quot;SillAngle&quot;:{&quot;Code&quot;:&quot;False&quot;,&quot;Text&quot;:&quot;No&quot;},&quot;HasSideChannel&quot;:{&quot;Code&quot;:&quot;False&quot;,&quot;Text&quot;:&quot;No&quot;},&quot;WidthType&quot;:{&quot;Code&quot;:&quot;B2B&quot;,&quot;Text&quot;:&quot;Bracket-to-Bracket&quot;},&quot;FabricDrop&quot;:{&quot;Code&quot;:&quot;REG&quot;,&quot;Text&quot;:&quot;Regular&quot;}}},&#xd;
+      &quot;IsFreightApplied&quot;: false,&#xd;
+      &quot;RevisionNumber&quot;: 0,&#xd;
+      &quot;Area&quot;: {&#xd;
+        &quot;Name&quot;: &quot;New Area 1&quot;,&#xd;
+        &quot;ChildAreas&quot;: null&#xd;
+      }&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;Number&quot;: 2,&#xd;
+      &quot;Name&quot;: &quot;Roller Shade 2&quot;,&#xd;
+      &quot;Quantity&quot;: 5,&#xd;
+      &quot;ModelNumber&quot;: &quot;S2A13-ROLLER&quot;,&#xd;
+      &quot;ListPrice&quot;: 540,&#xd;
+      &quot;DiscountedPrice&quot;: 540,&#xd;
+      &quot;LeadTime&quot;: 15,&#xd;
+      &quot;Configuration&quot;: {&quot;Product&quot;:&quot;Roller&quot;,&quot;Features&quot;:{&quot;LightGaps&quot;:{&quot;Code&quot;:&quot;MIN&quot;,&quot;Text&quot;:&quot;Minimum&quot;},&quot;Width&quot;:{&quot;Code&quot;:&quot;[50,0,0,0,0,0]&quot;,&quot;Text&quot;:&quot;[50,0,0,0,0,0]&quot;},&quot;Height&quot;:{&quot;Code&quot;:&quot;34&quot;,&quot;Text&quot;:&quot;34&quot;},&quot;Currency&quot;:{&quot;Code&quot;:&quot;USD&quot;,&quot;Text&quot;:&quot;USD&quot;},&quot;Country&quot;:{&quot;Code&quot;:&quot;US&quot;,&quot;Text&quot;:&quot;US&quot;},&quot;Control&quot;:{&quot;Code&quot;:&quot;MR&quot;,&quot;Text&quot;:&quot;Manual&quot;},&quot;Fabric&quot;:{&quot;Code&quot;:&quot;SP12-27-3&quot;,&quot;Text&quot;:&quot;Basketweave 27 Oyster 3%&quot;},&quot;FabricFace&quot;:{&quot;Code&quot;:&quot;FIN&quot;,&quot;Text&quot;:&quot;Fabric Face Away From Glass (Standard)&quot;},&quot;Drive&quot;:{&quot;Code&quot;:&quot;CM&quot;,&quot;Text&quot;:&quot;Cordless Manual&quot;},&quot;MountingType&quot;:{&quot;Code&quot;:&quot;I&quot;,&quot;Text&quot;:&quot;Inside&quot;},&quot;TopTreatment&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;HasCustomSeams&quot;:{&quot;Code&quot;:&quot;False&quot;,&quot;Text&quot;:&quot;No&quot;},&quot;WidthType&quot;:{&quot;Code&quot;:&quot;B2B&quot;,&quot;Text&quot;:&quot;Bracket-to-Bracket&quot;},&quot;FabricDrop&quot;:{&quot;Code&quot;:&quot;REG&quot;,&quot;Text&quot;:&quot;Regular&quot;}}},&#xd;
+      &quot;IsFreightApplied&quot;: false,&#xd;
+      &quot;RevisionNumber&quot;: 0,&#xd;
+      &quot;Area&quot;: {&#xd;
+        &quot;Name&quot;: &quot;New Area 1&quot;,&#xd;
+        &quot;ChildAreas&quot;: null&#xd;
+      }&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;Number&quot;: 3,&#xd;
+      &quot;Name&quot;: &quot;Product 1&quot;,&#xd;
+      &quot;Quantity&quot;: 1,&#xd;
+      &quot;ModelNumber&quot;: &quot;LMRC&quot;,&#xd;
+      &quot;ListPrice&quot;: 1693.43,&#xd;
+      &quot;LeadTime&quot;: 30,&#xd;
+      &quot;Configuration&quot;: {&quot;Product&quot;:&quot;LMRC&quot;,&quot;Features&quot;:{&quot;BATTEN&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;CUSTSEAM&quot;:{&quot;Code&quot;:&quot;NO&quot;,&quot;Text&quot;:&quot;No&quot;},&quot;SAGREDUCER&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;No&quot;},&quot;SIDECHANNEL&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;SILLANGLE&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;CUSTCOLOR_BKT&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;UIHEMBARCOLOR&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;CUSTCOLOR_HEM&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;HEMBAR_ENDCAP_COLOR&quot;:{&quot;Code&quot;:&quot;AUTO&quot;,&quot;Text&quot;:&quot;Rules Will Select&quot;},&quot;CUSTCOLOR_HEMENDCAP&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;IHA&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;No&quot;},&quot;PRESHIP&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;COUNTRY&quot;:{&quot;Code&quot;:&quot;US&quot;,&quot;Text&quot;:&quot;United States&quot;},&quot;SHIPTO&quot;:{&quot;Code&quot;:&quot;US&quot;,&quot;Text&quot;:&quot;United States&quot;},&quot;SPRING&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;No Spring&quot;},&quot;ROOMMARK&quot;:{&quot;Code&quot;:&quot;0&quot;,&quot;Text&quot;:&quot;0&quot;},&quot;ANGLE&quot;:{&quot;Code&quot;:&quot;0&quot;,&quot;Text&quot;:&quot;0&quot;},&quot;CUSTSEAMLOC1&quot;:{&quot;Code&quot;:&quot;0&quot;,&quot;Text&quot;:&quot;0&quot;},&quot;CUSTSEAMLOC2&quot;:{&quot;Code&quot;:&quot;0&quot;,&quot;Text&quot;:&quot;0&quot;},&quot;WIDTH&quot;:{&quot;Code&quot;:&quot;60&quot;,&quot;Text&quot;:&quot;60&quot;},&quot;HEIGHT&quot;:{&quot;Code&quot;:&quot;60&quot;,&quot;Text&quot;:&quot;60&quot;},&quot;LTGAPLEFT&quot;:{&quot;Code&quot;:&quot;0.5&quot;,&quot;Text&quot;:&quot;1/2&quot;},&quot;LTGAPRIGHT&quot;:{&quot;Code&quot;:&quot;0.5&quot;,&quot;Text&quot;:&quot;1/2&quot;},&quot;SYSMOUNT&quot;:{&quot;Code&quot;:&quot;I&quot;,&quot;Text&quot;:&quot;Inside&quot;},&quot;ROLL&quot;:{&quot;Code&quot;:&quot;REG&quot;,&quot;Text&quot;:&quot;Regular&quot;},&quot;FABFACE&quot;:{&quot;Code&quot;:&quot;FIN&quot;,&quot;Text&quot;:&quot;Fabric Face Away From Glass (Standard)&quot;},&quot;HEMBAR&quot;:{&quot;Code&quot;:&quot;DESHM&quot;,&quot;Text&quot;:&quot;Designer Bottom Bar (Recommended)&quot;},&quot;FABRIC&quot;:{&quot;Code&quot;:&quot;P12-90-3&quot;,&quot;Text&quot;:&quot;P12-90-3 - Basketweave 90 Silver 3% - Oyster&quot;},&quot;CONTROLFAMILY&quot;:{&quot;Code&quot;:&quot;L&quot;,&quot;Text&quot;:&quot;Sivoia QS Palladiom Wired&quot;},&quot;FABRICROTATION&quot;:{&quot;Code&quot;:&quot;NONRR&quot;,&quot;Text&quot;:&quot;Not Railroaded&quot;},&quot;OPRPOS&quot;:{&quot;Code&quot;:&quot;L&quot;,&quot;Text&quot;:&quot;Left&quot;},&quot;BRACKET_LEFT&quot;:{&quot;Code&quot;:&quot;LJ&quot;,&quot;Text&quot;:&quot;Jamb Bracket&quot;},&quot;BRACKET_RIGHT&quot;:{&quot;Code&quot;:&quot;LT&quot;,&quot;Text&quot;:&quot;Center Bracket&quot;},&quot;BRACKET_COLOR&quot;:{&quot;Code&quot;:&quot;PWH&quot;,&quot;Text&quot;:&quot;Pure White&quot;},&quot;TUBE&quot;:{&quot;Code&quot;:&quot;AUTO&quot;,&quot;Text&quot;:&quot;Rules Will Select&quot;},&quot;Currency&quot;:{&quot;Code&quot;:&quot;USD&quot;,&quot;Text&quot;:&quot;USD&quot;},&quot;Country&quot;:{&quot;Code&quot;:&quot;US&quot;,&quot;Text&quot;:&quot;US&quot;},&quot;DiscountedPrice&quot;:{&quot;Code&quot;:&quot;850.72&quot;,&quot;Text&quot;:&quot;850.72&quot;},&quot;Notes&quot;:{&quot;Code&quot;:&quot;&quot;,&quot;Text&quot;:&quot;&quot;},&quot;QuotableFor&quot;:{&quot;Code&quot;:&quot;17-Jul-2018&quot;,&quot;Text&quot;:&quot;17-Jul-2018&quot;},&quot;IsDiscountOverridden&quot;:{&quot;Code&quot;:false,&quot;Text&quot;:false}}},&#xd;
+      &quot;IsFreightApplied&quot;: false,&#xd;
+      &quot;RevisionNumber&quot;: 0,&#xd;
+      &quot;Area&quot;: {&#xd;
+        &quot;Name&quot;: &quot;New Area 1&quot;,&#xd;
+        &quot;ChildAreas&quot;: null&#xd;
+      }&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;Number&quot;: 4,&#xd;
+      &quot;Name&quot;: &quot;Drapery 1&quot;,&#xd;
+      &quot;Quantity&quot;: 1,&#xd;
+      &quot;ModelNumber&quot;: &quot;QSSD-S175STR&quot;,&#xd;
+      &quot;ListPrice&quot;: 1636.88,&#xd;
+      &quot;LeadTime&quot;: 15,&#xd;
+      &quot;Configuration&quot;: {&quot;Product&quot;:&quot;Drapery&quot;,&quot;Features&quot;:{&quot;TrackType&quot;:{&quot;Code&quot;:&quot;SINGLE&quot;,&quot;Text&quot;:&quot;Single&quot;},&quot;Pleat&quot;:{&quot;Code&quot;:&quot;PP&quot;,&quot;Text&quot;:&quot;Pinchpleat&quot;},&quot;Fullness&quot;:{&quot;Code&quot;:&quot;3X&quot;,&quot;Text&quot;:&quot;3X - Sheer Pinch Pleat&quot;},&quot;MetalColor&quot;:{&quot;Code&quot;:&quot;RAL1003&quot;,&quot;Text&quot;:&quot;RAL 1003 Signal Yellow&quot;},&quot;OperatorPosition&quot;:{&quot;Code&quot;:&quot;L&quot;,&quot;Text&quot;:&quot;Left&quot;},&quot;DrawDirection&quot;:{&quot;Code&quot;:&quot;CD&quot;,&quot;Text&quot;:&quot;Center Draw&quot;},&quot;MountingType&quot;:{&quot;Code&quot;:&quot;C&quot;,&quot;Text&quot;:&quot;Ceiling Mount&quot;},&quot;Splices&quot;:{&quot;Code&quot;:&quot;0.0000&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;ManualOverride&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;No&quot;},&quot;ProductDetails&quot;:{&quot;Code&quot;:&quot;QSSDS175STR&quot;,&quot;Text&quot;:&quot;Sivoia QS Wired D175&quot;},&quot;Currency&quot;:{&quot;Code&quot;:&quot;USD&quot;,&quot;Text&quot;:&quot;USD&quot;},&quot;Country&quot;:{&quot;Code&quot;:&quot;US&quot;,&quot;Text&quot;:&quot;US&quot;},&quot;Width&quot;:{&quot;Code&quot;:&quot;50&quot;,&quot;Text&quot;:&quot;50&quot;}}},&#xd;
+      &quot;IsFreightApplied&quot;: false,&#xd;
+      &quot;RevisionNumber&quot;: 0,&#xd;
+      &quot;Area&quot;: {&#xd;
+        &quot;Name&quot;: &quot;New Area 1&quot;,&#xd;
+        &quot;ChildAreas&quot;: null&#xd;
+      }&#xd;
+   },&#xd;
+    {&#xd;
+      &quot;Number&quot;: 5,&#xd;
+      &quot;Name&quot;: &quot;Honeycomb 1&quot;,&#xd;
+      &quot;Quantity&quot;: 3,&#xd;
+      &quot;ModelNumber&quot;: &quot;CSV-SYJ-B&quot;,&#xd;
+      &quot;ListPrice&quot;: 564,&#xd;
+      &quot;LeadTime&quot;: 15,&#xd;
+      &quot;Configuration&quot;: {&quot;Product&quot;:&quot;Honeycomb&quot;,&quot;Features&quot;:{&quot;MountingType&quot;:{&quot;Code&quot;:&quot;I&quot;,&quot;Text&quot;:&quot;Inside&quot;},&quot;Control&quot;:{&quot;Code&quot;:&quot;SYSRF434&quot;,&quot;Text&quot;:&quot;Sivoia QS Triathlon&quot;},&quot;HasBattery&quot;:{&quot;Code&quot;:&quot;True&quot;,&quot;Text&quot;:&quot;Yes&quot;},&quot;HasTopbackCover&quot;:{&quot;Code&quot;:&quot;False&quot;,&quot;Text&quot;:&quot;No&quot;},&quot;ShadeType&quot;:{&quot;Code&quot;:&quot;NONE&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;BracketColor&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;ProductDetails&quot;:{&quot;Code&quot;:&quot;CELLULAR&quot;,&quot;Text&quot;:&quot;Insulating Honeycomb&quot;},&quot;Currency&quot;:{&quot;Code&quot;:&quot;USD&quot;,&quot;Text&quot;:&quot;USD&quot;},&quot;Country&quot;:{&quot;Code&quot;:&quot;US&quot;,&quot;Text&quot;:&quot;US&quot;},&quot;Width&quot;:{&quot;Code&quot;:&quot;40&quot;,&quot;Text&quot;:&quot;40&quot;},&quot;Height&quot;:{&quot;Code&quot;:&quot;34&quot;,&quot;Text&quot;:&quot;34&quot;},&quot;Fabric&quot;:{&quot;Code&quot;:&quot;RD-PB-SD&quot;,&quot;Text&quot;:&quot;Cyprus Room-Darkening Sand&quot;}}},&#xd;
+      &quot;IsFreightApplied&quot;: false,&#xd;
+      &quot;RevisionNumber&quot;: 0,&#xd;
+      &quot;Area&quot;: {&#xd;
+        &quot;Name&quot;: &quot;New Area 1&quot;,&#xd;
+        &quot;ChildAreas&quot;: null&#xd;
+      }&#xd;
+    },&#xd;
+    {&#xd;
+     &quot;Number&quot;: 6,&#xd;
+      &quot;Name&quot;: &quot;Product 21&quot;,&#xd;
+      &quot;Quantity&quot;: 4,&#xd;
+      &quot;ModelNumber&quot;: &quot;MA-1000-WH&quot;,&#xd;
+      &quot;ListPrice&quot;: 197,&#xd;
+      &quot;LeadTime&quot;: 2,&#xd;
+      &quot;IsFreightApplied&quot;: false,&#xd;
+      &quot;RevisionNumber&quot;: 0,&#xd;
+      &quot;Currency&quot;: &quot;USD&quot;,&#xd;
+      &quot;Area&quot;: {&#xd;
+        &quot;Name&quot;: &quot;New Area 1&quot;,&#xd;
+        &quot;ChildAreas&quot;: null&#xd;
+      }&#xd;
+    }&#xd;
+  ],&#xd;
+  &quot;LeadTime&quot;: 15,&#xd;
+  &quot;OverrideLeadTime&quot;: 12,&#xd;
+  &quot;CreatedByUserEmail&quot;: &quot;sci1saltmarsh@gmail.com&quot;&#xd;
+}&#xd;
+</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">services.mylutron.com</stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">integration/quotes/v1/quote-submission</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">${umToken}</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                  <stringProp name="Header.value">e8dc058679694674bd4aa260ffff7fba</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+              <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SeeTouch(DefaultProductModel)" enabled="false">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${configuratorUrl}</stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">${dpmEndPointUrl}/${STproduct}/${shipToNumber}/${lsc}</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">X-Security-Token</stringProp>
+                  <stringProp name="Header.value">${umToken}</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+              <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SeeTouch(Control)" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;Product&quot;:&quot;${STproduct}&quot;,&quot;Selections&quot;:{&quot;Control&quot;:&quot;${STControl}&quot;,&quot;Currency&quot;:&quot;${currency}&quot;,&quot;Country&quot;:&quot;${country}&quot;},&quot;Filters&quot;:{},&quot;ShipToNumber&quot;:&quot;${shipToNumber}&quot;,&quot;LutronSellingCompany&quot;:&quot;${lsc}&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${configuratorUrl}</stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">${zoomEndPoint}</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">X-Security-Token</stringProp>
+                  <stringProp name="Header.value">${umToken}</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+              <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SeeTouch(DefaultProductModel)" enabled="false">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${configuratorUrl}</stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">${dpmEndPointUrl}/${STproduct}/${shipToNumber}/${lsc}</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">X-Security-Token</stringProp>
+                  <stringProp name="Header.value">${umToken}</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+              <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SeeTouch(Control,System)" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;Product&quot;:&quot;${STproduct}&quot;,&quot;Selections&quot;:{&quot;Control&quot;:&quot;${STControl}&quot;,&quot;Currency&quot;:&quot;${currency}&quot;,&quot;Country&quot;:&quot;${country}&quot;,&quot;System&quot;:&quot;${STSystem}&quot;},&quot;Filters&quot;:{},&quot;ShipToNumber&quot;:&quot;${shipToNumber}&quot;,&quot;LutronSellingCompany&quot;:&quot;${lsc}&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${configuratorUrl}</stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">${zoomEndPoint}</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">X-Security-Token</stringProp>
+                  <stringProp name="Header.value">${umToken}</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+              <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+          <boolProp name="resetInterpreter">false</boolProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="script">//log.info(&quot;UamTokenBody Address = &quot; +${UamTokenBody});</stringProp>
+        </BeanShellPostProcessor>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Quote_API Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1517474916000</longProp>
+        <longProp name="ThreadGroup.end_time">1517474916000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UM-Integration Token Generation" enabled="false">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">false</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">grant_type=password&amp;client_id=${Client_id-ld}&amp;client_secret=${client_secret-ld}&amp;redirect_uri=${RedirectURL}/&amp;username=${user-Id}&amp;password=Nagarro@2018</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">aaz-um-integration-login.azurewebsites.net</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/OAuth/Token</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">umToken1</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;access_token&quot;:&quot;(.+?)&quot;,</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default">NotFound</stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+              <stringProp name="Scope.variable">umToken</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request-qawendy1" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">grant_type=password&amp;client_id=b79f6a38-5f11-44e5-8eda-d32d7f3fdc95&amp;client_secret=8f403c33-87a0-41e9-9491-8a0256599a50&amp;redirect_uri=${RedirectURL_LD}&amp;username=qawendy1@gmail.com&amp;password=Nagarro@2018</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">aaz-um-integration-login.azurewebsites.net</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/OAuth/Token</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">umToken</stringProp>
+              <stringProp name="RegexExtractor.regex">&quot;access_token&quot;:&quot;(.+?)&quot;,</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default">NotFound</stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+              <stringProp name="Scope.variable">umToken</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Account CSV Data Set Config" enabled="false">
+          <stringProp name="filename">C:\Saltmarsh\NCPA Performance\Accounts.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">shipToNumber,lsc,currency,country</stringProp>
+          <boolProp name="ignoreFirstLine">false</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="quote-submission" enabled="true">
+          <boolProp name="LoopController.continue_forever">true</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </LoopController>
+        <hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller-POST" enabled="true">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+            <boolProp name="TransactionController.parent">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Quote Post" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">${__FileToString(${RequestPacket},,)}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">prod-24.eastus.logic.azure.com/</stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+              <stringProp name="HTTPSampler.path">workflows/01c517d386034699bd507d61715602ec/triggers/request/paths/invoke/createQuote?api-version=2016-10-01&amp;sp=%2Ftriggers%2Frequest%2Frun&amp;sv=1.0&amp;sig=cDwDnprcj8Pyy_mjowCcDXEbHq0Jt9OtotZ1CbcmdY8</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Authorization1</stringProp>
+                    <stringProp name="Header.value">${__property(umToken1)}</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">X-ServiceAccountId</stringProp>
+                    <stringProp name="Header.value">varun.chauhan@lutron.com</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">token_type</stringProp>
+                    <stringProp name="Header.value">Bearer</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                    <stringProp name="Header.value">e8dc058679694674bd4aa260ffff7fba</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+                <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+              </ConstantTimer>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">RequestId</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;RequestId&quot;:&quot;(.+?)&quot;,</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NotFound</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Scope.variable">umToken</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <DebugPostProcessor guiclass="TestBeanGUI" testclass="DebugPostProcessor" testname="Debug PostProcessor" enabled="true">
+                <boolProp name="displayJMeterProperties">true</boolProp>
+                <boolProp name="displayJMeterVariables">true</boolProp>
+                <boolProp name="displaySamplerProperties">true</boolProp>
+                <boolProp name="displaySystemProperties">true</boolProp>
+              </DebugPostProcessor>
+              <hashTree/>
+              <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+                <stringProp name="BeanShellAssertion.query">${__setProperty(RequestId2,${RequestId})}</stringProp>
+                <stringProp name="BeanShellAssertion.filename"></stringProp>
+                <stringProp name="BeanShellAssertion.parameters"></stringProp>
+                <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+              </BeanShellAssertion>
+              <hashTree/>
+            </hashTree>
+            <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+              <boolProp name="ResultCollector.error_logging">false</boolProp>
+              <objProp>
+                <name>saveConfig</name>
+                <value class="SampleSaveConfiguration">
+                  <time>true</time>
+                  <latency>true</latency>
+                  <timestamp>true</timestamp>
+                  <success>true</success>
+                  <label>true</label>
+                  <code>true</code>
+                  <message>true</message>
+                  <threadName>true</threadName>
+                  <dataType>true</dataType>
+                  <encoding>false</encoding>
+                  <assertions>true</assertions>
+                  <subresults>true</subresults>
+                  <responseData>false</responseData>
+                  <samplerData>false</samplerData>
+                  <xml>false</xml>
+                  <fieldNames>true</fieldNames>
+                  <responseHeaders>false</responseHeaders>
+                  <requestHeaders>false</requestHeaders>
+                  <responseDataOnError>false</responseDataOnError>
+                  <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                  <assertionsResultsToSave>0</assertionsResultsToSave>
+                  <bytes>true</bytes>
+                  <sentBytes>true</sentBytes>
+                  <threadCounts>true</threadCounts>
+                  <idleTime>true</idleTime>
+                  <connectTime>true</connectTime>
+                </value>
+              </objProp>
+              <stringProp name="filename"></stringProp>
+            </ResultCollector>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Order Post" enabled="false">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">${__FileToString(${Path},,)}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">prod-17.eastus.logic.azure.com</stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+              <stringProp name="HTTPSampler.path">workflows/bb0d6107ce12417688f3bbe1b305cbca/triggers/request/paths/invoke/placeOrder?api-version=2016-10-01&amp;sp=%2Ftriggers%2Frequest%2Frun&amp;sv=1.0&amp;sig=984AeLL3ydnGLJWAHrdbZvglbWwLS9825Qub4ShR8yA</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Authorization1</stringProp>
+                    <stringProp name="Header.value">${__property(umToken1)}</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">X-ServiceAccountId</stringProp>
+                    <stringProp name="Header.value">varun.chauhan@lutron.com</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">token_type</stringProp>
+                    <stringProp name="Header.value">Bearer</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                    <stringProp name="Header.value">e8dc058679694674bd4aa260ffff7fba</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="false">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Authorization1</stringProp>
+                    <stringProp name="Header.value">${__property(umToken1)}</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">X-ServiceAccountId</stringProp>
+                    <stringProp name="Header.value">varun.chauhan@lutron.com</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">token_type</stringProp>
+                    <stringProp name="Header.value">Bearer</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                    <stringProp name="Header.value">e8dc058679694674bd4aa260ffff7fba</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+                <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+              </ConstantTimer>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">RequestId1</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;RequestId&quot;:&quot;(.+?)&quot;,</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NotFound</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Scope.variable">umToken</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <DebugPostProcessor guiclass="TestBeanGUI" testclass="DebugPostProcessor" testname="Debug PostProcessor" enabled="true">
+                <boolProp name="displayJMeterProperties">true</boolProp>
+                <boolProp name="displayJMeterVariables">true</boolProp>
+                <boolProp name="displaySamplerProperties">true</boolProp>
+                <boolProp name="displaySystemProperties">true</boolProp>
+              </DebugPostProcessor>
+              <hashTree/>
+              <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+                <boolProp name="ResultCollector.error_logging">false</boolProp>
+                <objProp>
+                  <name>saveConfig</name>
+                  <value class="SampleSaveConfiguration">
+                    <time>true</time>
+                    <latency>true</latency>
+                    <timestamp>true</timestamp>
+                    <success>true</success>
+                    <label>true</label>
+                    <code>true</code>
+                    <message>true</message>
+                    <threadName>true</threadName>
+                    <dataType>true</dataType>
+                    <encoding>false</encoding>
+                    <assertions>true</assertions>
+                    <subresults>true</subresults>
+                    <responseData>false</responseData>
+                    <samplerData>false</samplerData>
+                    <xml>false</xml>
+                    <fieldNames>true</fieldNames>
+                    <responseHeaders>false</responseHeaders>
+                    <requestHeaders>false</requestHeaders>
+                    <responseDataOnError>false</responseDataOnError>
+                    <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                    <assertionsResultsToSave>0</assertionsResultsToSave>
+                    <bytes>true</bytes>
+                    <sentBytes>true</sentBytes>
+                    <threadCounts>true</threadCounts>
+                    <idleTime>true</idleTime>
+                    <connectTime>true</connectTime>
+                  </value>
+                </objProp>
+                <stringProp name="filename"></stringProp>
+              </ResultCollector>
+              <hashTree/>
+              <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+                <stringProp name="BeanShellAssertion.query">${__setProperty(RequestId3,${RequestId1})}</stringProp>
+                <stringProp name="BeanShellAssertion.filename"></stringProp>
+                <stringProp name="BeanShellAssertion.parameters"></stringProp>
+                <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+              </BeanShellAssertion>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller-GET" enabled="false">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+            <boolProp name="TransactionController.parent">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GetQuoteSubmissionStatus" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">aaz-sm-rc-business-apis.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.port">443</stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+              <stringProp name="HTTPSampler.path">api/request-management/${RequestId}/trail</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">${__property(umToken1)}</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                    <stringProp name="Header.value">e8dc058679694674bd4aa260ffff7fba</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GetOrderSubmissionStatus" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">aaz-sm-rc-business-apis.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.port">443</stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+              <stringProp name="HTTPSampler.path">api/request-management/${RequestId1}/trail</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">${__property(umToken1)}</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                    <stringProp name="Header.value">e8dc058679694674bd4aa260ffff7fba</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller-GET" enabled="false">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+            <boolProp name="TransactionController.parent">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+              <boolProp name="LoopController.continue_forever">true</boolProp>
+              <stringProp name="LoopController.loops">10</stringProp>
+            </LoopController>
+            <hashTree>
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GetQuoteStatus" enabled="true">
+                <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                  <collectionProp name="Arguments.arguments"/>
+                </elementProp>
+                <stringProp name="HTTPSampler.domain">aaz-sm-rc-business-apis.azurewebsites.net</stringProp>
+                <stringProp name="HTTPSampler.port">443</stringProp>
+                <stringProp name="HTTPSampler.protocol">https</stringProp>
+                <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+                <stringProp name="HTTPSampler.path">api/request-management/${__property(RequestId2)}/trail</stringProp>
+                <stringProp name="HTTPSampler.method">GET</stringProp>
+                <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+                <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+                <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+                <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+                <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+                <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+                <stringProp name="HTTPSampler.response_timeout">10000</stringProp>
+              </HTTPSamplerProxy>
+              <hashTree>
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                  <collectionProp name="HeaderManager.headers">
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">Authorization</stringProp>
+                      <stringProp name="Header.value">${__property(umToken1)}</stringProp>
+                    </elementProp>
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">Content-Type</stringProp>
+                      <stringProp name="Header.value">application/json</stringProp>
+                    </elementProp>
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                      <stringProp name="Header.value">e8dc058679694674bd4aa260ffff7fba</stringProp>
+                    </elementProp>
+                    <elementProp name="" elementType="Header">
+                      <stringProp name="Header.name">Accept</stringProp>
+                      <stringProp name="Header.value">application/json</stringProp>
+                    </elementProp>
+                  </collectionProp>
+                </HeaderManager>
+                <hashTree/>
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor for Response" enabled="true">
+                  <stringProp name="RegexExtractor.useHeaders">message</stringProp>
+                  <stringProp name="RegexExtractor.refname">Data</stringProp>
+                  <stringProp name="RegexExtractor.regex">&quot;Data&quot;:&quot;(.+?)&quot;,</stringProp>
+                  <stringProp name="RegexExtractor.template">$1$</stringProp>
+                  <stringProp name="RegexExtractor.default">NotFound</stringProp>
+                  <stringProp name="RegexExtractor.match_number">1</stringProp>
+                  <stringProp name="Scope.variable">umToken1</stringProp>
+                  <stringProp name="Sample.scope">all</stringProp>
+                </RegexExtractor>
+                <hashTree/>
+                <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+                  <boolProp name="resetInterpreter">false</boolProp>
+                  <stringProp name="parameters"></stringProp>
+                  <stringProp name="filename"></stringProp>
+                  <stringProp name="script"></stringProp>
+                </BeanShellPostProcessor>
+                <hashTree/>
+                <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+                  <stringProp name="ConstantTimer.delay">500</stringProp>
+                </ConstantTimer>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+            <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+              <boolProp name="LoopController.continue_forever">true</boolProp>
+              <stringProp name="LoopController.loops">3</stringProp>
+            </LoopController>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GetOrderStatus" enabled="false">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">aaz-sm-rc-business-apis.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.port">443</stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+              <stringProp name="HTTPSampler.path">api/request-management/${__property(RequestId3)}/trail</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">${__property(umToken1)}</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                    <stringProp name="Header.value">e8dc058679694674bd4aa260ffff7fba</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+              <stringProp name="ConstantTimer.delay">3000</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+            <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+              <stringProp name="CounterConfig.start">1</stringProp>
+              <stringProp name="CounterConfig.end">10</stringProp>
+              <stringProp name="CounterConfig.incr">2</stringProp>
+              <stringProp name="CounterConfig.name"></stringProp>
+              <stringProp name="CounterConfig.format"></stringProp>
+              <boolProp name="CounterConfig.per_user">false</boolProp>
+            </CounterConfig>
+            <hashTree/>
+            <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+              <boolProp name="LoopController.continue_forever">true</boolProp>
+              <stringProp name="LoopController.loops">0</stringProp>
+            </LoopController>
+            <hashTree/>
+            <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="script">//vars.put(&quot;Data&quot;, new String(data));
+////log.info(&quot;Data is: = &quot; +data.toString());
+////String str = vars.get(&quot;Data&quot;);
+////f = new FileOutputStream(&quot;D:/Lutron/Api/Quote.csv&quot;, true);
+////p = new PrintStream(f); 
+////this.interpreter.setOut(p); 
+////print(str);
+////f.close();
+//
+// // pass true if want to append to existing file  
+// // if want to overwrite, then don&apos;t pass the second argument
+// FileWriter fstream = new FileOutputStream(&quot;D:/Lutron/Api/Quote.csv&quot;, true);
+// BufferedWriter out = new BufferedWriter(fstream);
+// out.write(email + &quot;,&quot; + token);
+// out.write(System.getProperty(&quot;line.separator&quot;));
+// out.close();
+// fstream.close();</stringProp>
+            </BeanShellPostProcessor>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="All Seetouch models(Loop Controller)" enabled="false">
+          <boolProp name="LoopController.continue_forever">true</boolProp>
+          <stringProp name="LoopController.loops">5</stringProp>
+        </LoopController>
+        <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Seetouch Models(CSV Data)" enabled="false">
+            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="filename">C:\Saltmarsh\NCPA Performance\TestFilePerformance_SeeTouch.csv</stringProp>
+            <boolProp name="ignoreFirstLine">false</boolProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="variableNames">STproduct,STControl,STSystem,STStyle,STFinish,STColor,STDescription,STImages,STModelNumber,Engraving,IncludesFaceplate,BucketHeaders,IsDefault</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SeeTouch(DefaultProductModel)" enabled="false">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">services.mylutron.com</stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">integration/quotes/v1/quote-submission</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">X-Security-Token</stringProp>
+                  <stringProp name="Header.value">${umToken}</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+              <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Products(QSSRS30A20 &amp; S2A13-ROLLER &amp; LMRC &amp; QSSD-S175STR &amp; CSV-SYJ-B &amp; MA-1000-WH)" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+                &quot;ProjectDetails&quot;: {&#xd;
+    &quot;Name&quot;: &quot;TestProduct&quot;,&#xd;
+    &quot;SpaceName&quot;: &quot;Office&quot;,&#xd;
+    &quot;Description&quot;: &quot;Renovation&quot;,&#xd;
+    &quot;Location&quot;: {&#xd;
+      &quot;AddressLine1&quot;: &quot;Coopersburg&quot;,&#xd;
+      &quot;AddressLine2&quot;: null,&#xd;
+      &quot;AddressLine3&quot;: null,&#xd;
+      &quot;AddressLine4&quot;: null,&#xd;
+      &quot;City&quot;: &quot;Breinigsville&quot;,&#xd;
+      &quot;StateCode&quot;: &quot;PA&quot;,&#xd;
+      &quot;ZIP&quot;: &quot;18031&quot;,&#xd;
+      &quot;CountryCode&quot;: &quot;US&quot;&#xd;
+    },&#xd;
+    &quot;ProjectStatus&quot;: &quot;Design&quot;,&#xd;
+    &quot;ShipToNumber&quot;: &quot;497745&quot;,&#xd;
+    &quot;LutronSellingCompany&quot;: &quot;00101&quot;,&#xd;
+    &quot;AssignedToUserMyLutronId&quot;: &quot;sci1saltmarsh@gmail.com&quot;,&#xd;
+    &quot;ProjectType&quot;: &quot;Office Space&quot;,&#xd;
+    &quot;PrimaryLutronInfluencer&quot;: &quot;Dealer1&quot;,&#xd;
+    &quot;EstimatedCloseDate&quot;: &quot;2019-06-13T14:41:40.6522507-04:00&quot;&#xd;
+  },&#xd;
+  &quot;LineItems&quot;: [&#xd;
+    {&#xd;
+      &quot;Number&quot;: 1,&#xd;
+      &quot;Name&quot;: &quot;Roller Shade 1&quot;,&#xd;
+      &quot;Quantity&quot;: 10,&#xd;
+      &quot;ModelNumber&quot;: &quot;QSSRS30A20&quot;,&#xd;
+      &quot;ListPrice&quot;: 879.43,&#xd;
+      &quot;DiscountedPrice&quot;: 879.43,&#xd;
+      &quot;LeadTime&quot;: 15,&#xd;
+      &quot;Configuration&quot;: {&quot;Product&quot;:&quot;Roller&quot;,&quot;Features&quot;:{&quot;LightGaps&quot;:{&quot;Code&quot;:&quot;MIN&quot;,&quot;Text&quot;:&quot;Minimum&quot;},&quot;Width&quot;:{&quot;Code&quot;:&quot;[40,0,0,0,0,0]&quot;,&quot;Text&quot;:&quot;[40,0,0,0,0,0]&quot;},&quot;Height&quot;:{&quot;Code&quot;:&quot;43&quot;,&quot;Text&quot;:&quot;43&quot;},&quot;Currency&quot;:{&quot;Code&quot;:&quot;USD&quot;,&quot;Text&quot;:&quot;USD&quot;},&quot;Country&quot;:{&quot;Code&quot;:&quot;US&quot;,&quot;Text&quot;:&quot;US&quot;},&quot;Control&quot;:{&quot;Code&quot;:&quot;QSW&quot;,&quot;Text&quot;:&quot;Sivoia QS Wired&quot;},&quot;Drive&quot;:{&quot;Code&quot;:&quot;S100&quot;,&quot;Text&quot;:&quot;Roller 100&quot;},&quot;Fabric&quot;:{&quot;Code&quot;:&quot;SP12-27-3&quot;,&quot;Text&quot;:&quot;Basketweave 27 Oyster 3%&quot;},&quot;FabricFace&quot;:{&quot;Code&quot;:&quot;FIN&quot;,&quot;Text&quot;:&quot;Fabric Face Away From Glass (Standard)&quot;},&quot;Voltage&quot;:{&quot;Code&quot;:&quot;24V&quot;,&quot;Text&quot;:&quot;24V&quot;},&quot;DriveSide&quot;:{&quot;Code&quot;:&quot;L&quot;,&quot;Text&quot;:&quot;Left&quot;},&quot;Bracket&quot;:{&quot;Code&quot;:&quot;CB&quot;,&quot;Text&quot;:&quot;Ceiling Brackets&quot;},&quot;MountingType&quot;:{&quot;Code&quot;:&quot;I&quot;,&quot;Text&quot;:&quot;Inside&quot;},&quot;TopTreatment&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;HasCustomSeams&quot;:{&quot;Code&quot;:&quot;False&quot;,&quot;Text&quot;:&quot;No&quot;},&quot;SillAngle&quot;:{&quot;Code&quot;:&quot;False&quot;,&quot;Text&quot;:&quot;No&quot;},&quot;HasSideChannel&quot;:{&quot;Code&quot;:&quot;False&quot;,&quot;Text&quot;:&quot;No&quot;},&quot;WidthType&quot;:{&quot;Code&quot;:&quot;B2B&quot;,&quot;Text&quot;:&quot;Bracket-to-Bracket&quot;},&quot;FabricDrop&quot;:{&quot;Code&quot;:&quot;REG&quot;,&quot;Text&quot;:&quot;Regular&quot;}}},&#xd;
+      &quot;IsFreightApplied&quot;: false,&#xd;
+      &quot;RevisionNumber&quot;: 0,&#xd;
+      &quot;Area&quot;: {&#xd;
+        &quot;Name&quot;: &quot;New Area 1&quot;,&#xd;
+        &quot;ChildAreas&quot;: null&#xd;
+      }&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;Number&quot;: 2,&#xd;
+      &quot;Name&quot;: &quot;Roller Shade 2&quot;,&#xd;
+      &quot;Quantity&quot;: 5,&#xd;
+      &quot;ModelNumber&quot;: &quot;S2A13-ROLLER&quot;,&#xd;
+      &quot;ListPrice&quot;: 540,&#xd;
+      &quot;DiscountedPrice&quot;: 540,&#xd;
+      &quot;LeadTime&quot;: 15,&#xd;
+      &quot;Configuration&quot;: {&quot;Product&quot;:&quot;Roller&quot;,&quot;Features&quot;:{&quot;LightGaps&quot;:{&quot;Code&quot;:&quot;MIN&quot;,&quot;Text&quot;:&quot;Minimum&quot;},&quot;Width&quot;:{&quot;Code&quot;:&quot;[50,0,0,0,0,0]&quot;,&quot;Text&quot;:&quot;[50,0,0,0,0,0]&quot;},&quot;Height&quot;:{&quot;Code&quot;:&quot;34&quot;,&quot;Text&quot;:&quot;34&quot;},&quot;Currency&quot;:{&quot;Code&quot;:&quot;USD&quot;,&quot;Text&quot;:&quot;USD&quot;},&quot;Country&quot;:{&quot;Code&quot;:&quot;US&quot;,&quot;Text&quot;:&quot;US&quot;},&quot;Control&quot;:{&quot;Code&quot;:&quot;MR&quot;,&quot;Text&quot;:&quot;Manual&quot;},&quot;Fabric&quot;:{&quot;Code&quot;:&quot;SP12-27-3&quot;,&quot;Text&quot;:&quot;Basketweave 27 Oyster 3%&quot;},&quot;FabricFace&quot;:{&quot;Code&quot;:&quot;FIN&quot;,&quot;Text&quot;:&quot;Fabric Face Away From Glass (Standard)&quot;},&quot;Drive&quot;:{&quot;Code&quot;:&quot;CM&quot;,&quot;Text&quot;:&quot;Cordless Manual&quot;},&quot;MountingType&quot;:{&quot;Code&quot;:&quot;I&quot;,&quot;Text&quot;:&quot;Inside&quot;},&quot;TopTreatment&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;HasCustomSeams&quot;:{&quot;Code&quot;:&quot;False&quot;,&quot;Text&quot;:&quot;No&quot;},&quot;WidthType&quot;:{&quot;Code&quot;:&quot;B2B&quot;,&quot;Text&quot;:&quot;Bracket-to-Bracket&quot;},&quot;FabricDrop&quot;:{&quot;Code&quot;:&quot;REG&quot;,&quot;Text&quot;:&quot;Regular&quot;}}},&#xd;
+      &quot;IsFreightApplied&quot;: false,&#xd;
+      &quot;RevisionNumber&quot;: 0,&#xd;
+      &quot;Area&quot;: {&#xd;
+        &quot;Name&quot;: &quot;New Area 1&quot;,&#xd;
+        &quot;ChildAreas&quot;: null&#xd;
+      }&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;Number&quot;: 3,&#xd;
+      &quot;Name&quot;: &quot;Product 1&quot;,&#xd;
+      &quot;Quantity&quot;: 1,&#xd;
+      &quot;ModelNumber&quot;: &quot;LMRC&quot;,&#xd;
+      &quot;ListPrice&quot;: 1693.43,&#xd;
+      &quot;LeadTime&quot;: 30,&#xd;
+      &quot;Configuration&quot;: {&quot;Product&quot;:&quot;LMRC&quot;,&quot;Features&quot;:{&quot;BATTEN&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;CUSTSEAM&quot;:{&quot;Code&quot;:&quot;NO&quot;,&quot;Text&quot;:&quot;No&quot;},&quot;SAGREDUCER&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;No&quot;},&quot;SIDECHANNEL&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;SILLANGLE&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;CUSTCOLOR_BKT&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;UIHEMBARCOLOR&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;CUSTCOLOR_HEM&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;HEMBAR_ENDCAP_COLOR&quot;:{&quot;Code&quot;:&quot;AUTO&quot;,&quot;Text&quot;:&quot;Rules Will Select&quot;},&quot;CUSTCOLOR_HEMENDCAP&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;IHA&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;No&quot;},&quot;PRESHIP&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;COUNTRY&quot;:{&quot;Code&quot;:&quot;US&quot;,&quot;Text&quot;:&quot;United States&quot;},&quot;SHIPTO&quot;:{&quot;Code&quot;:&quot;US&quot;,&quot;Text&quot;:&quot;United States&quot;},&quot;SPRING&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;No Spring&quot;},&quot;ROOMMARK&quot;:{&quot;Code&quot;:&quot;0&quot;,&quot;Text&quot;:&quot;0&quot;},&quot;ANGLE&quot;:{&quot;Code&quot;:&quot;0&quot;,&quot;Text&quot;:&quot;0&quot;},&quot;CUSTSEAMLOC1&quot;:{&quot;Code&quot;:&quot;0&quot;,&quot;Text&quot;:&quot;0&quot;},&quot;CUSTSEAMLOC2&quot;:{&quot;Code&quot;:&quot;0&quot;,&quot;Text&quot;:&quot;0&quot;},&quot;WIDTH&quot;:{&quot;Code&quot;:&quot;60&quot;,&quot;Text&quot;:&quot;60&quot;},&quot;HEIGHT&quot;:{&quot;Code&quot;:&quot;60&quot;,&quot;Text&quot;:&quot;60&quot;},&quot;LTGAPLEFT&quot;:{&quot;Code&quot;:&quot;0.5&quot;,&quot;Text&quot;:&quot;1/2&quot;},&quot;LTGAPRIGHT&quot;:{&quot;Code&quot;:&quot;0.5&quot;,&quot;Text&quot;:&quot;1/2&quot;},&quot;SYSMOUNT&quot;:{&quot;Code&quot;:&quot;I&quot;,&quot;Text&quot;:&quot;Inside&quot;},&quot;ROLL&quot;:{&quot;Code&quot;:&quot;REG&quot;,&quot;Text&quot;:&quot;Regular&quot;},&quot;FABFACE&quot;:{&quot;Code&quot;:&quot;FIN&quot;,&quot;Text&quot;:&quot;Fabric Face Away From Glass (Standard)&quot;},&quot;HEMBAR&quot;:{&quot;Code&quot;:&quot;DESHM&quot;,&quot;Text&quot;:&quot;Designer Bottom Bar (Recommended)&quot;},&quot;FABRIC&quot;:{&quot;Code&quot;:&quot;P12-90-3&quot;,&quot;Text&quot;:&quot;P12-90-3 - Basketweave 90 Silver 3% - Oyster&quot;},&quot;CONTROLFAMILY&quot;:{&quot;Code&quot;:&quot;L&quot;,&quot;Text&quot;:&quot;Sivoia QS Palladiom Wired&quot;},&quot;FABRICROTATION&quot;:{&quot;Code&quot;:&quot;NONRR&quot;,&quot;Text&quot;:&quot;Not Railroaded&quot;},&quot;OPRPOS&quot;:{&quot;Code&quot;:&quot;L&quot;,&quot;Text&quot;:&quot;Left&quot;},&quot;BRACKET_LEFT&quot;:{&quot;Code&quot;:&quot;LJ&quot;,&quot;Text&quot;:&quot;Jamb Bracket&quot;},&quot;BRACKET_RIGHT&quot;:{&quot;Code&quot;:&quot;LT&quot;,&quot;Text&quot;:&quot;Center Bracket&quot;},&quot;BRACKET_COLOR&quot;:{&quot;Code&quot;:&quot;PWH&quot;,&quot;Text&quot;:&quot;Pure White&quot;},&quot;TUBE&quot;:{&quot;Code&quot;:&quot;AUTO&quot;,&quot;Text&quot;:&quot;Rules Will Select&quot;},&quot;Currency&quot;:{&quot;Code&quot;:&quot;USD&quot;,&quot;Text&quot;:&quot;USD&quot;},&quot;Country&quot;:{&quot;Code&quot;:&quot;US&quot;,&quot;Text&quot;:&quot;US&quot;},&quot;DiscountedPrice&quot;:{&quot;Code&quot;:&quot;850.72&quot;,&quot;Text&quot;:&quot;850.72&quot;},&quot;Notes&quot;:{&quot;Code&quot;:&quot;&quot;,&quot;Text&quot;:&quot;&quot;},&quot;QuotableFor&quot;:{&quot;Code&quot;:&quot;17-Jul-2018&quot;,&quot;Text&quot;:&quot;17-Jul-2018&quot;},&quot;IsDiscountOverridden&quot;:{&quot;Code&quot;:false,&quot;Text&quot;:false}}},&#xd;
+      &quot;IsFreightApplied&quot;: false,&#xd;
+      &quot;RevisionNumber&quot;: 0,&#xd;
+      &quot;Area&quot;: {&#xd;
+        &quot;Name&quot;: &quot;New Area 1&quot;,&#xd;
+        &quot;ChildAreas&quot;: null&#xd;
+      }&#xd;
+    },&#xd;
+    {&#xd;
+      &quot;Number&quot;: 4,&#xd;
+      &quot;Name&quot;: &quot;Drapery 1&quot;,&#xd;
+      &quot;Quantity&quot;: 1,&#xd;
+      &quot;ModelNumber&quot;: &quot;QSSD-S175STR&quot;,&#xd;
+      &quot;ListPrice&quot;: 1636.88,&#xd;
+      &quot;LeadTime&quot;: 15,&#xd;
+      &quot;Configuration&quot;: {&quot;Product&quot;:&quot;Drapery&quot;,&quot;Features&quot;:{&quot;TrackType&quot;:{&quot;Code&quot;:&quot;SINGLE&quot;,&quot;Text&quot;:&quot;Single&quot;},&quot;Pleat&quot;:{&quot;Code&quot;:&quot;PP&quot;,&quot;Text&quot;:&quot;Pinchpleat&quot;},&quot;Fullness&quot;:{&quot;Code&quot;:&quot;3X&quot;,&quot;Text&quot;:&quot;3X - Sheer Pinch Pleat&quot;},&quot;MetalColor&quot;:{&quot;Code&quot;:&quot;RAL1003&quot;,&quot;Text&quot;:&quot;RAL 1003 Signal Yellow&quot;},&quot;OperatorPosition&quot;:{&quot;Code&quot;:&quot;L&quot;,&quot;Text&quot;:&quot;Left&quot;},&quot;DrawDirection&quot;:{&quot;Code&quot;:&quot;CD&quot;,&quot;Text&quot;:&quot;Center Draw&quot;},&quot;MountingType&quot;:{&quot;Code&quot;:&quot;C&quot;,&quot;Text&quot;:&quot;Ceiling Mount&quot;},&quot;Splices&quot;:{&quot;Code&quot;:&quot;0.0000&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;ManualOverride&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;No&quot;},&quot;ProductDetails&quot;:{&quot;Code&quot;:&quot;QSSDS175STR&quot;,&quot;Text&quot;:&quot;Sivoia QS Wired D175&quot;},&quot;Currency&quot;:{&quot;Code&quot;:&quot;USD&quot;,&quot;Text&quot;:&quot;USD&quot;},&quot;Country&quot;:{&quot;Code&quot;:&quot;US&quot;,&quot;Text&quot;:&quot;US&quot;},&quot;Width&quot;:{&quot;Code&quot;:&quot;50&quot;,&quot;Text&quot;:&quot;50&quot;}}},&#xd;
+      &quot;IsFreightApplied&quot;: false,&#xd;
+      &quot;RevisionNumber&quot;: 0,&#xd;
+      &quot;Area&quot;: {&#xd;
+        &quot;Name&quot;: &quot;New Area 1&quot;,&#xd;
+        &quot;ChildAreas&quot;: null&#xd;
+      }&#xd;
+   },&#xd;
+    {&#xd;
+      &quot;Number&quot;: 5,&#xd;
+      &quot;Name&quot;: &quot;Honeycomb 1&quot;,&#xd;
+      &quot;Quantity&quot;: 3,&#xd;
+      &quot;ModelNumber&quot;: &quot;CSV-SYJ-B&quot;,&#xd;
+      &quot;ListPrice&quot;: 564,&#xd;
+      &quot;LeadTime&quot;: 15,&#xd;
+      &quot;Configuration&quot;: {&quot;Product&quot;:&quot;Honeycomb&quot;,&quot;Features&quot;:{&quot;MountingType&quot;:{&quot;Code&quot;:&quot;I&quot;,&quot;Text&quot;:&quot;Inside&quot;},&quot;Control&quot;:{&quot;Code&quot;:&quot;SYSRF434&quot;,&quot;Text&quot;:&quot;Sivoia QS Triathlon&quot;},&quot;HasBattery&quot;:{&quot;Code&quot;:&quot;True&quot;,&quot;Text&quot;:&quot;Yes&quot;},&quot;HasTopbackCover&quot;:{&quot;Code&quot;:&quot;False&quot;,&quot;Text&quot;:&quot;No&quot;},&quot;ShadeType&quot;:{&quot;Code&quot;:&quot;NONE&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;BracketColor&quot;:{&quot;Code&quot;:&quot;N&quot;,&quot;Text&quot;:&quot;None&quot;},&quot;ProductDetails&quot;:{&quot;Code&quot;:&quot;CELLULAR&quot;,&quot;Text&quot;:&quot;Insulating Honeycomb&quot;},&quot;Currency&quot;:{&quot;Code&quot;:&quot;USD&quot;,&quot;Text&quot;:&quot;USD&quot;},&quot;Country&quot;:{&quot;Code&quot;:&quot;US&quot;,&quot;Text&quot;:&quot;US&quot;},&quot;Width&quot;:{&quot;Code&quot;:&quot;40&quot;,&quot;Text&quot;:&quot;40&quot;},&quot;Height&quot;:{&quot;Code&quot;:&quot;34&quot;,&quot;Text&quot;:&quot;34&quot;},&quot;Fabric&quot;:{&quot;Code&quot;:&quot;RD-PB-SD&quot;,&quot;Text&quot;:&quot;Cyprus Room-Darkening Sand&quot;}}},&#xd;
+      &quot;IsFreightApplied&quot;: false,&#xd;
+      &quot;RevisionNumber&quot;: 0,&#xd;
+      &quot;Area&quot;: {&#xd;
+        &quot;Name&quot;: &quot;New Area 1&quot;,&#xd;
+        &quot;ChildAreas&quot;: null&#xd;
+      }&#xd;
+    },&#xd;
+    {&#xd;
+     &quot;Number&quot;: 6,&#xd;
+      &quot;Name&quot;: &quot;Product 21&quot;,&#xd;
+      &quot;Quantity&quot;: 4,&#xd;
+      &quot;ModelNumber&quot;: &quot;MA-1000-WH&quot;,&#xd;
+      &quot;ListPrice&quot;: 197,&#xd;
+      &quot;LeadTime&quot;: 2,&#xd;
+      &quot;IsFreightApplied&quot;: false,&#xd;
+      &quot;RevisionNumber&quot;: 0,&#xd;
+      &quot;Currency&quot;: &quot;USD&quot;,&#xd;
+      &quot;Area&quot;: {&#xd;
+        &quot;Name&quot;: &quot;New Area 1&quot;,&#xd;
+        &quot;ChildAreas&quot;: null&#xd;
+      }&#xd;
+    }&#xd;
+  ],&#xd;
+  &quot;LeadTime&quot;: 15,&#xd;
+  &quot;OverrideLeadTime&quot;: 12,&#xd;
+  &quot;CreatedByUserEmail&quot;: &quot;sci1saltmarsh@gmail.com&quot;&#xd;
+}&#xd;
+</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">services.mylutron.com</stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">integration/quotes/v1/quote-submission</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">${umToken}</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                  <stringProp name="Header.value">e8dc058679694674bd4aa260ffff7fba</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+              <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SeeTouch(DefaultProductModel)" enabled="false">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${configuratorUrl}</stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">${dpmEndPointUrl}/${STproduct}/${shipToNumber}/${lsc}</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">X-Security-Token</stringProp>
+                  <stringProp name="Header.value">${umToken}</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+              <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SeeTouch(Control)" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;Product&quot;:&quot;${STproduct}&quot;,&quot;Selections&quot;:{&quot;Control&quot;:&quot;${STControl}&quot;,&quot;Currency&quot;:&quot;${currency}&quot;,&quot;Country&quot;:&quot;${country}&quot;},&quot;Filters&quot;:{},&quot;ShipToNumber&quot;:&quot;${shipToNumber}&quot;,&quot;LutronSellingCompany&quot;:&quot;${lsc}&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${configuratorUrl}</stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">${zoomEndPoint}</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">X-Security-Token</stringProp>
+                  <stringProp name="Header.value">${umToken}</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+              <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SeeTouch(DefaultProductModel)" enabled="false">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${configuratorUrl}</stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">${dpmEndPointUrl}/${STproduct}/${shipToNumber}/${lsc}</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">X-Security-Token</stringProp>
+                  <stringProp name="Header.value">${umToken}</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+              <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SeeTouch(Control,System)" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;Product&quot;:&quot;${STproduct}&quot;,&quot;Selections&quot;:{&quot;Control&quot;:&quot;${STControl}&quot;,&quot;Currency&quot;:&quot;${currency}&quot;,&quot;Country&quot;:&quot;${country}&quot;,&quot;System&quot;:&quot;${STSystem}&quot;},&quot;Filters&quot;:{},&quot;ShipToNumber&quot;:&quot;${shipToNumber}&quot;,&quot;LutronSellingCompany&quot;:&quot;${lsc}&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${configuratorUrl}</stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">${zoomEndPoint}</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">X-Security-Token</stringProp>
+                  <stringProp name="Header.value">${umToken}</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+              <stringProp name="ConstantTimer.delay">${thinkTime}</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+          <stringProp name="filename">D:/Lutron/Api/Quote.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">SrNo,AppName,ApiName,Name,Description,UamTokenBody,RequestPacket,Assertion,TestResult,Apio</stringProp>
+          <boolProp name="ignoreFirstLine">false</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Quote_API Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1517474916000</longProp>
+        <longProp name="ThreadGroup.end_time">1517474916000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="quote-submission" enabled="true">
+          <boolProp name="LoopController.continue_forever">true</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </LoopController>
+        <hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller-GET" enabled="true">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+            <boolProp name="TransactionController.parent">false</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GetQuoteStatus" enabled="false">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">aaz-sm-rc-business-apis.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.port">443</stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+              <stringProp name="HTTPSampler.path">api/request-management/${__property(RequestId2)}/trail</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">${__property(umToken1)}</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                    <stringProp name="Header.value">e8dc058679694674bd4aa260ffff7fba</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GetOrderStatus" enabled="false">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">aaz-sm-rc-business-apis.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.port">443</stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+              <stringProp name="HTTPSampler.path">api/request-management/${__property(RequestId3)}/trail</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">${__property(umToken1)}</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                    <stringProp name="Header.value">e8dc058679694674bd4aa260ffff7fba</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller-GET" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">false</boolProp>
+        </TransactionController>
+        <hashTree>
+          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+            <boolProp name="LoopController.continue_forever">true</boolProp>
+            <stringProp name="LoopController.loops">5</stringProp>
+          </LoopController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GetQuoteStatus" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">aaz-sm-rc-business-apis.azurewebsites.net</stringProp>
+              <stringProp name="HTTPSampler.port">443</stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+              <stringProp name="HTTPSampler.path">api/request-management/${__property(RequestId2)}/trail</stringProp>
+              <stringProp name="HTTPSampler.method">GET</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout">10000</stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">${__property(umToken1)}</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                    <stringProp name="Header.value">e8dc058679694674bd4aa260ffff7fba</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor for Response" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">message</stringProp>
+                <stringProp name="RegexExtractor.refname">Data</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;Data&quot;:&quot;(.+?)&quot;,</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">NotFound</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Scope.variable">umToken1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script"></stringProp>
+              </BeanShellPostProcessor>
+              <hashTree/>
+              <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+                <stringProp name="ConstantTimer.delay">300</stringProp>
+              </ConstantTimer>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+            <boolProp name="LoopController.continue_forever">true</boolProp>
+            <intProp name="LoopController.loops">-1</intProp>
+          </LoopController>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GetOrderStatus" enabled="false">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">aaz-sm-rc-business-apis.azurewebsites.net</stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+            <stringProp name="HTTPSampler.path">api/request-management/${__property(RequestId3)}/trail</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">${__property(umToken1)}</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                  <stringProp name="Header.value">e8dc058679694674bd4aa260ffff7fba</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">3000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+            <stringProp name="CounterConfig.start">1</stringProp>
+            <stringProp name="CounterConfig.end">10</stringProp>
+            <stringProp name="CounterConfig.incr">2</stringProp>
+            <stringProp name="CounterConfig.name"></stringProp>
+            <stringProp name="CounterConfig.format"></stringProp>
+            <boolProp name="CounterConfig.per_user">false</boolProp>
+          </CounterConfig>
+          <hashTree/>
+          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+            <boolProp name="LoopController.continue_forever">true</boolProp>
+            <stringProp name="LoopController.loops">0</stringProp>
+          </LoopController>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">//vars.put(&quot;Data&quot;, new String(data));
+////log.info(&quot;Data is: = &quot; +data.toString());
+////String str = vars.get(&quot;Data&quot;);
+////f = new FileOutputStream(&quot;D:/Lutron/Api/Quote.csv&quot;, true);
+////p = new PrintStream(f); 
+////this.interpreter.setOut(p); 
+////print(str);
+////f.close();
+//
+// // pass true if want to append to existing file  
+// // if want to overwrite, then don&apos;t pass the second argument
+// FileWriter fstream = new FileOutputStream(&quot;D:/Lutron/Api/Quote.csv&quot;, true);
+// BufferedWriter out = new BufferedWriter(fstream);
+// out.write(email + &quot;,&quot; + token);
+// out.write(System.getProperty(&quot;line.separator&quot;));
+// out.close();
+// fstream.close();</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
