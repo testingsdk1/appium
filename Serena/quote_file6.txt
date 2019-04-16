@@ -1,0 +1,98 @@
+{
+  "ProjectDetails": {
+    "Name": "Project-Ankush06",
+    "SpaceName": "Suite 11",
+    "Description": "Renovation",
+    "Location": {
+      "AddressLine1": "200 Park Ave",
+      "AddressLine2": null,
+      "AddressLine3": null,
+      "AddressLine4": null,
+      "City": ", New York",
+      "StateCode": "NY",
+      "ZIP": "10166",
+      "CountryCode": "US"
+    },
+    "ProjectStatus": "Design",
+    "ShipToNumber": "497745",
+    "LutronSellingCompany": "00101",
+    "AssignedToUserMyLutronId": "sci1saltmarsh@gmail.com",
+    "ProjectType": "OfficSpace",
+    "PrimaryLutronInfluencer": "Dealer1",
+    "EstimatedCloseDate": "2019-06-13T14:41:40.6522507-04:00"
+  },
+  "LineItems": [
+    {
+      "Number": 1,
+      "Name": "Serena Roller Shade 1",
+      "Quantity": 1,
+      "ModelNumber": "S2A13-ROLLER",
+      "Configuration": {
+        "Product": "Roller",
+        "Features": {
+          "FabricFace": {
+            "Code": "FIN",
+            "Text": "Fabric Face Away From Glass (Standard)"
+          },
+          "Fabric": {
+            "Code": "RF-PALT-1",
+            "Text": "Palette Blackout Snow White 0%"
+          },
+          "FabricDrop": {
+            "Code": "REG",
+            "Text": "Regular"
+          },
+          "Power": {
+            "Code": "BATT",
+            "Text": "Battery (Not included)"
+          },
+          "MountingType": {
+            "Code": "I",
+            "Text": "Inside"
+          },
+          "Height": {
+            "Code": "50",
+            "Text": "50"
+          },
+          "Width": {
+            "Code": "[50,0,0,0,0,0]",
+            "Text": "[50,0,0,0,0,0]"
+          },
+          "TopTreatment": {
+            "Code": "N",
+            "Text": "None"
+          },
+          "Control": {
+            "Code": "SER",
+            "Text": "Serena"
+          },
+          "LightGaps": {
+            "Code": "MIN",
+            "Text": "Minimum"
+          },
+          "Country": {
+            "Code": "US",
+            "Text": "US"
+          },
+          "Currency": {
+            "Code": "USD",
+            "Text": "USD"
+          },
+          "HasCustomSeams": {
+            "Code": "False",
+            "Text": "No"
+          },
+          "WidthType": {
+            "Code": "B2B",
+            "Text": "Bracket-to-Bracket"
+          }
+        }
+      },
+      "Area": {
+        "Name": "New Area 1",
+        "ChildArea": null
+      },
+      "DiscountedPrice": 60
+    }
+  ]
+}
